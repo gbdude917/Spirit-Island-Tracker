@@ -7,7 +7,7 @@ import { useState, useEffect, useRef } from "react";
 import classes from "./NavBar.module.css";
 
 const NavBar = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
   const burgerButtonRef = useRef<HTMLButtonElement>(null);
@@ -51,6 +51,8 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const isNotRendering = windowWidth != 0;
+
   const linkContents =
     windowWidth >= 620 ? (
       <ul className={classes.linkContainer}>
@@ -91,7 +93,7 @@ const NavBar = () => {
           <Link href="/">SI Tracker</Link>
         </div>
 
-        {linkContents}
+        {isNotRendering && linkContents}
       </div>
 
       <div
