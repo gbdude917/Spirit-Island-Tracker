@@ -71,6 +71,10 @@ const NavBar = () => {
         <li>
           <Link href="/adversaries">Adversaries</Link>
         </li>
+
+        <li>
+          <Link href="/login">Login</Link>
+        </li>
       </ul>
     ) : (
       <>
