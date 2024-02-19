@@ -10,6 +10,15 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10vh; /* Account for nav height */
+  min-height: 90vh;
+}
+
 @font-face {
   font-family: "Julius Sans One";
   src: url("/fonts/JuliusSansOne-Regular.ttf");
