@@ -1,15 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   images: {
     remotePatterns: [
       {
         protocol: "https",
         hostname: "spiritislandwiki.com",
         port: "",
-        pathname: "/images/c/c2/**",
+        pathname: "/images/**",
       },
     ],
   },
 };
-
-export default nextConfig;

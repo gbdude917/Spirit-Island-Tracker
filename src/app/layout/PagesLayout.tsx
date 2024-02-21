@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import NavBar from "./components/navigation/NavBar";
-import Footer from "./components/footer/Footer";
+import "../globals.css";
+import NavBar from "../components/navigation/NavBar";
+import Footer from "../components/footer/Footer";
 
 const metadata: Metadata = {
   title: "SI Tracker",
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <>
       <body>
         <NavBar />
 
@@ -22,6 +22,6 @@ export default function RootLayout({
 
         <Footer />
       </body>
-    </html>
+    </>
   );
 }
