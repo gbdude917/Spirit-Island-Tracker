@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { GetStaticPaths, GetStaticProps } from "next";
 
 interface Spirit {
@@ -8,14 +9,28 @@ interface Spirit {
 }
 
 const SpiritDetails = (props: Spirit) => {
-  return <div>{props.name}</div>;
+  return (
+    <>
+      <Head>
+        <title>
+          {typeof props.name === "string" ? props.name : "Spirit Details"}
+        </title>
+        <meta name="description" content={props.name} />
+      </Head>
+      <div>{props.name}</div>
+    </>
+  );
 };
 
 const getData = async () => {
-  const response = await fetch("http://localhost:8080/api/v1/spirits");
-  const spirits: Spirit[] = await response.json();
-
-  return spirits;
+  try {
+    const response = await fetch("http://localhost:8080/api/v1/spirits");
+    const spirits = await response.json();
+    return spirits;
+  } catch (error) {
+    console.log("Something went wrong fetching data!");
+    console.log(error);
+  }
 };
 
 // Generates `/spirits/Spirit_Name_1` and `/spirits/Spirit_Name_2`
