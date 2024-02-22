@@ -14,11 +14,7 @@ const SpiritCard = (props: SpiritCardProps) => {
   return (
     <Link href={`/spirits/${props.pathname}`} className={classes.container}>
       <div className={classes.wrapper}>
-        <div className={classes.title}>
-          <h2>{props.name}</h2>
-        </div>
-
-        <div>
+        <div className={classes.imageContainer}>
           <Image
             className={classes.image}
             src={props.image}
@@ -26,6 +22,9 @@ const SpiritCard = (props: SpiritCardProps) => {
             height={300}
             width={300}
           />
+        </div>
+        <div className={classes.textContainer}>
+          <h2>{props.name}</h2>
         </div>
       </div>
     </Link>

@@ -23,9 +23,18 @@ const Spirits = async () => {
 
   return (
     <div className={classes.container}>
-      {spirits.map((spirit: Spirit) => (
-        <SpiritCard key={spirit.id} {...spirit} />
-      ))}
+      <div className={classes.contentWrapper}>
+        <div className={classes.description}>
+          <h1>List of Spirits</h1>
+          <p>These are the Spirits available in the game.</p>
+          <p>Click on the Spirit to learn more about them.</p>
+        </div>
+        <div className={classes.spiritWrapper}>
+          {spirits.map((spirit: Spirit) => (
+            <SpiritCard key={spirit.id} {...spirit} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
