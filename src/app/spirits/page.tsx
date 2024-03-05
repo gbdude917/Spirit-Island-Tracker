@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import SpiritCard from "../components/cards/SpiritCard";
+import SpiritCard from "../components/cards/SpiritCard/SpiritCard";
 
 import classes from "./page.module.css";
 
