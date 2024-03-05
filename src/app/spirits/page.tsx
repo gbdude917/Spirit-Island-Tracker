@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-import classes from "./page.module.css";
-
 import SpiritCard from "../components/cards/SpiritCard";
+
+import classes from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Spirits | SI Tracker",
