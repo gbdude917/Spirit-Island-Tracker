@@ -5,7 +5,7 @@ import classes from "./page.module.css";
 import SpiritCard from "../components/cards/SpiritCard";
 
 export const metadata: Metadata = {
-  title: "SI Tracker | Spirits",
+  title: "Spirits | SI Tracker",
   description: "Browse the Spirits available in the baord game Spirit Island",
 };
 
