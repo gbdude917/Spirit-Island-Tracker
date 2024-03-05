@@ -1,5 +1,3 @@
-import type { GetStaticPaths } from "next";
-
 import SpiritCard from "../components/cards/SpiritCard";
 
 import type { Metadata } from "next";
