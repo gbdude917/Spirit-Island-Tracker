@@ -1,0 +1,94 @@
+.container {
+  padding: 0 25px;
+  width: 100vw;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 1.15rem;
+  margin: 25px 0;
+}
+
+.section__intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.imageWrapper {
+  height: 100%;
+  width: 30%;
+}
+
+.imageContainer {
+  height: 70%;
+  width: 100%;
+}
+
+.adversaryImage {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.textContainer {
+  width: 70%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.playstyle_subsection {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.subInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro__subsection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.marginRight {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 620px) {
+  .content,
+  .section__intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .imageWrapper {
+    width: 100%;
+  }
+
+  .textContainer {
+    padding: 0;
+  }
+
+  .textContainer {
+    width: 100%;
+    margin: 25px 0;
+  }
+}
