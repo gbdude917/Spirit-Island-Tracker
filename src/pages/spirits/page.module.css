@@ -1,10 +1,7 @@
 .container {
-  font-family: sans-serif;
-}
-
-.container {
   padding: 0 25px;
   width: 100vw;
+  font-family: sans-serif;
 }
 
 .wrapper {
