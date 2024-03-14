@@ -12,7 +12,7 @@ interface AdversaryCardProps {
 
 const AdversaryCard = (props: AdversaryCardProps) => {
   return (
-    <Link href={`/spirits/${props.pathname}`} className={classes.container}>
+    <Link href={`/adversaries/${props.pathname}`} className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.imageContainer}>
           <Image
